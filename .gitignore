@@ -1,0 +1,46 @@
+# Virtual environment
+venv/
+env/
+.env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# HuggingFace model cache
+.cache/
+~/.cache/
+
+# HuggingFace diffusers/transformers downloaded weights
+# (too large for git, downloaded automatically at runtime)
+*.bin
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+
+# Gradio temp files
+gradio_cached_examples/
+flagged/
+*.tmp
+
+# Python eggs / dist
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local test outputs
+outputs/
