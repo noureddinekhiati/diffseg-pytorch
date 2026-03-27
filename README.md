@@ -97,7 +97,6 @@ diffseg-pytorch/
 │   └── semantics.py      # BLIP caption + noun → segment label assignment
 ├── model.py              # DiffSegModel: encode() + segment()
 ├── app.py                # Gradio live demo
-├── make_examples.py      # download example images
 ├── requirements.txt
 └── README.md
 ```
@@ -119,9 +118,6 @@ pip install diffusers transformers accelerate gradio Pillow numpy nltk huggingfa
 
 # NLTK data for semantic labeling
 python -c "import nltk; nltk.download('averaged_perceptron_tagger'); nltk.download('punkt'); nltk.download('averaged_perceptron_tagger_eng')"
-
-# Download example images
-python make_examples.py
 
 # Run
 python app.py
