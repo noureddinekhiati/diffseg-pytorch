@@ -166,41 +166,8 @@ print(f"Found {result_fine['n_segments']} segments")
 | Timestep | Hardcoded | **Interactive slider** |
 | Resolution weights | Hardcoded | **Interactive sliders + presets** |
 
----
 
-## Deploy to HuggingFace Spaces
 
-1. Create a new Space at https://huggingface.co/new-space
-   - SDK: **Gradio** · Hardware: **ZeroGPU**
-
-2. Re-enable the `spaces` decorator in `app.py`:
-   ```python
-   import spaces
-   # and add @spaces.GPU(duration=60) above encode_image()
-   ```
-
-3. Add HF metadata block to the **very top** of `README.md`:
-   ```
-   ---
-   title: DiffSeg PyTorch
-   emoji: 🔍
-   colorFrom: purple
-   colorTo: teal
-   sdk: gradio
-   sdk_version: "4.19.0"
-   app_file: app.py
-   license: mit
-   hardware: zero-gpu
-   ---
-   ```
-
-4. Push:
-   ```bash
-   git remote add space https://huggingface.co/spaces/noureddinekhiati/diffseg-pytorch
-   git push space main
-   ```
-
----
 
 ## Citation
 
